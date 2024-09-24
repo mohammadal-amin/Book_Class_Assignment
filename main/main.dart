@@ -2,7 +2,7 @@ import 'class_files.dart';
 
 void main(){
 
-  final book1 = Book("Business Management And Organisation","M.C. SHUKLA", 1952);
+  Book book1 = Book("Business Management And Organisation","M.C. SHUKLA", 1952);
 
   book1.read(878);
 
@@ -13,7 +13,7 @@ void main(){
   print("Pages Read: ${book1.getPagesRead()}\n");
   print("Age: ${book1.getBookAge()}\n");
 
-  final book2 = Book("Business Mathematics","V.K. KAPOOR",1976);
+  Book book2 = Book("Business Mathematics","V.K. KAPOOR",1976);
 
   book2.read(857);
 
@@ -24,7 +24,7 @@ void main(){
   print("Pages Read: ${book2.getPagesRead()}\n");
   print("Age: ${book2.getBookAge()}\n");
 
-  final book3 = Book("Accounting Principles", "DONALD E. KIESO", 1808);
+  Book book3 = Book("Accounting Principles", "DONALD E. KIESO", 1808);
 
   book3.read(230);
 

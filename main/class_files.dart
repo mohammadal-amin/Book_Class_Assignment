@@ -1,10 +1,12 @@
 class Book{
-  static int totalBooks=3;
+
 
   String title;
   String author;
   int publicationYear;
   int pagesRead = 0;
+
+  static int totalBooks=0;
 
   Book(this.title,this.author,this.publicationYear);
 
@@ -19,10 +21,7 @@ class Book{
 
   int getPublicationYear() => publicationYear;
 
-  int getBookAge(){
-    final currentYear = DateTime.now().year;
-    return currentYear - publicationYear;
-  }
+  int getBookAge() => DateTime.now().year - publicationYear;
 
 }
 
